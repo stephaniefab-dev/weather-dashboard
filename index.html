@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clima - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>¿Qué clima hace en...?</h1>
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Escribe una ciudad" autocomplete="off" required>
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="result" class="result hidden">
+            <p id="city-name" class="city-name"></p>
+            <p id="temp" class="temp"></p>
+            <p id="description" class="description"></p>
+            <div class="details">
+                <span id="feels-like"></span>
+                <span id="humidity"></span>
+            </div>
+        </div>
+
+        <p id="error" class="error hidden">No encontré esa ciudad. Intenta de nuevo.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

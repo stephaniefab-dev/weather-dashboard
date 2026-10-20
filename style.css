@@ -1,0 +1,112 @@
+:root {
+  --wine: #6E2A3A;
+  --camel: #C9A66B;
+  --butter: #F5D98B;
+  --babyblue: #AFD3E6;
+  --ivory: #F7EFE1;
+  --text: #3a2a23;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, var(--ivory) 0%, var(--babyblue) 100%);
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--text);
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 380px;
+  box-shadow: 0 10px 30px rgba(110, 42, 58, 0.15);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 20px;
+  color: var(--wine);
+}
+
+#search-form {
+  display: flex;
+  gap: 8px;
+}
+
+#city-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #e3d5c2;
+  border-radius: 10px;
+  font-size: 0.95rem;
+}
+
+#city-input:focus {
+  outline: 2px solid var(--camel);
+}
+
+button {
+  background: var(--wine);
+  color: var(--ivory);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #591f2d;
+}
+
+.result {
+  margin-top: 28px;
+}
+
+.result.hidden,
+.error.hidden {
+  display: none;
+}
+
+.city-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.temp {
+  font-size: 2.8rem;
+  margin: 4px 0;
+  color: var(--wine);
+}
+
+.description {
+  text-transform: capitalize;
+  color: #6b5a4d;
+  margin: 0 0 12px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.85rem;
+  color: #8a7a6a;
+}
+
+.error {
+  margin-top: 20px;
+  color: var(--wine);
+  font-size: 0.9rem;
+}
